@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">GruMatch — Find your next game</title>
+  <desc id="desc">Discover sports, activities, groups and people near you.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff5ef"/><stop offset="1" stop-color="#e8f1df"/></linearGradient>
+    <linearGradient id="orb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f35c50"/><stop offset="1" stop-color="#e2a25e"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1030" cy="85" r="235" fill="#f8d785" opacity=".75"/>
+  <circle cx="1080" cy="420" r="220" fill="#d7ead7" opacity=".75"/>
+  <rect x="85" y="82" width="92" height="92" rx="27" fill="#f35c50"/>
+  <text x="107" y="142" fill="white" font-family="Arial,sans-serif" font-size="38" font-weight="700">GM</text>
+  <text x="205" y="148" fill="#17171b" font-family="Arial,sans-serif" font-size="49" font-weight="700">GruMatch</text>
+  <text x="88" y="300" fill="#17171b" font-family="Arial,sans-serif" font-size="73" font-weight="700">Find your next</text>
+  <text x="88" y="385" fill="#f35c50" font-family="Georgia,serif" font-size="86" font-style="italic">game.</text>
+  <text x="91" y="475" fill="#6e6c70" font-family="Arial,sans-serif" font-size="27">Discover sports, activities and people near you.</text>
+  <circle cx="930" cy="315" r="116" fill="url(#orb)" opacity=".92"/>
+  <text x="884" y="338" fill="white" font-family="Arial,sans-serif" font-size="55" font-weight="700">GM</text>
+</svg>
