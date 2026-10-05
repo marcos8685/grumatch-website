@@ -18,7 +18,7 @@
     <div class="page-glow page-glow--two" aria-hidden="true"></div>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="GruMatch home"><span class="brand-mark" aria-hidden="true"><span>G</span><span>M</span></span><span>GruMatch</span></a>
-      <div class="header-actions"><label class="language-picker"><span class="sr-only">Language</span><select id="language-select" aria-label="Language"><option value="en">EN</option><option value="pt">PT</option></select></label><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button></div>
+      <div class="header-actions"><label class="language-picker"><span class="sr-only">Language</span><select id="language-select" aria-label="Language"><option value="en">EN</option><option value="pt">PT</option><option value="es">ES</option><option value="fr">FR</option><option value="it">IT</option></select></label><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button></div>
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <a href="#discover">Discover</a><a href="#how-it-works">How it works</a><a href="#community">Community</a><a href="#careers">Join us</a><a class="nav-cta" href="https://www.grumatch.com">Open app <span aria-hidden="true">↗</span></a>
       </nav>
@@ -67,5 +67,6 @@
       const setText=(selector,value)=>{const el=document.querySelector(selector);if(el)el.innerHTML=value};const applyLanguage=(lang)=>{const c=copy[lang]||copy.en;document.documentElement.lang=lang;document.querySelectorAll('.site-nav>a').forEach((el,i)=>el.innerHTML=c.nav[i]);setText('.hero .eyebrow',c.heroEyebrow);setText('.hero h1',c.heroTitle);setText('.hero-lede',c.heroLead);setText('.hero-actions .button',c.heroButton);setText('.hero-actions .text-link',c.heroLink);setText('#discover .eyebrow',c.discoverEyebrow);setText('#discover h2',c.discoverTitle);setText('#discover .discover-copy p',c.discoverText);setText('#how-it-works .eyebrow',c.howEyebrow);setText('#how-it-works h2',c.howTitle);setText('#community .eyebrow',c.communityEyebrow);setText('#community h2',c.communityTitle);setText('#community .community-copy p:not(.eyebrow)',c.communityText);setText('#careers .eyebrow',c.careersEyebrow);setText('#careers h2',c.careersTitle);setText('#careers .careers-heading>p',c.careersText);setText('.final-cta .eyebrow',c.finalEyebrow);setText('.final-cta h2',c.finalTitle);localStorage.setItem('grumatch-language',lang)};const picker=document.querySelector('#language-select');const saved=localStorage.getItem('grumatch-language')||'en';picker.value=saved;applyLanguage(saved);picker.addEventListener('change',e=>applyLanguage(e.target.value));
     </script>
     <script src="language.js"></script>
+    <script src="i18n-plus.js"></script>
   </body>
 </html>
